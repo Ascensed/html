@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header-login">
+        <div class="contenedor">
+            <div class="barra-login">
+                <a class="logo-login" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Netflics</h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="film.html" class="navegacion__enlace">Films</a>
+                    <a href="pelicula.html" class="navegacion__enlace">Peliculas</a>
+                    <a href="serie.html" class="navegacion__enlace">Series</a>
+                    <a href="kids.html" class="navegacion__enlace">Kids</a>
+                    <a id="eliminar" href="login.html" class="navegacion__enlace">Iniciar Sesión</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="contenedor-cuenta">
+
+        <div class="contenedor-datos">
+            <h1 class="cuenta-titulo">Mi cuenta</h1>
+            <img class="cuenta__img" src="img/luffy.jpeg">
+
+            <form id="cerrar">
+                <p class="text__cuenta">Nombre:</p>
+                <p id="name" class="dato__cuenta">Hola</p>
+
+                <p class="text__cuenta">Email:</p>
+                <p id="email" class="dato__cuenta">hola@gmail.com</p>
+                <a class="link__cuenta" href="#">Cambiar Contraseña</a>
+                <input class="boton-logout" type="submit" value="Cerrar Sesión">
+            </form>
+        </div>
+
+        <div class="contenedor-evento">
+            <h3 class="cuenta__titulo">Peliculas Favoritas</h3>
+            <div id="contenedor-boletos" class="contenedor-boletos">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/cuenta.js"></script>
+
+</body>
+
+</html>

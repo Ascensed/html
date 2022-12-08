@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas y Series</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login">
+
+    <header class="header-login">
+        <div class="contenedor">
+            <div class="barra-login">
+                <a class="logo-login" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Netflics</h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="film.html" class="navegacion__enlace">Films</a>
+                    <a href="peliculas.html" class="navegacion__enlace">Peliculas</a>
+                    <a href="series.html" class="navegacion__enlace">Series</a>
+                    <a href="kids.html" class="navegacion__enlace">Kids</a>
+                    <a id="eliminar" href="login.html" class="navegacion__enlace">Iniciar Sesión</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- PELICULAS -->
+
+    <h1 class="titulo__serie">Peliculas</h1>
+
+    <div class="contenedor-principal-peliculas">
+        
+        <h2 id="eliminarTexto" class="centrado"> Cargando Peliculas... </h2>
+
+        <div id="contenedor-pelicula" class="contenedor-pelicula">
+        </div>
+
+        <!-- SERIES -->
+
+        <h1 class="titulo__pelicula">Series</h1>
+
+        <h2 id="eliminarTexto" class="centrado"> Cargando Series... </h2>
+
+        <div id="contenedor-serie" class="contenedor-serie">
+        </div>
+    </div>
+
+    <script src="js/film.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body class="login">
+
+    <header class="header-login">
+        <div class="contenedor">
+            <div class="barra-login">
+                <a class="logo-login" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Netflics</h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="film.html" class="navegacion__enlace">Films</a>
+                    <a href="pelicula.html" class="navegacion__enlace">Peliculas</a>
+                    <a href="serie.html" class="navegacion__enlace">Series</a>
+                    <a href="kids.html" class="navegacion__enlace">Kids</a>
+                    <a id="eliminar" href="login.html" class="navegacion__enlace">Iniciar Sesión</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-registro">
+        <form id="registrarse" class="registrarse-r">
+            <h3 class="registro__titulo">Crear Cuenta</h3>
+
+            <div class="cuestionario-r">
+
+                <p class="registro__palabras">*Nombre</p>
+                <input id="nombre" type="text" placeholder="Nombre" class="registro__name">
+
+                <p class="registro__palabras">*Apellido</p>
+                <input id="apellido" type="text" placeholder="Apellido" class="registro__name">
+
+                <p class="registro__palabras">Edad</p>
+                <input id="edad" type="number" placeholder="Edad" class="registro__name">
+
+                <p class="registro__palabras">*Email</p>
+                <input id="email" type="email" placeholder="Email" class="registro__name">
+
+                <p class="registro__palabras">*Contraseña</p>
+                <input id="password" type="password" placeholder="Contraseña" class="registro__name">
+
+                <p class="registro__palabras">Telefono</p>
+                <input id="telefono" type="number" placeholder="Telefono" class="registro__name">
+            </div>
+
+            <input class="boton-registro" type="submit" value="Crear Cuenta">
+        </form>
+    </div>
+
+    <script src="js/registrarse.js"></script>
+
+</body>
+
+</html>

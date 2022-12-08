@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body class="login">
+
+    <header class="header-login">
+        <div class="contenedor">
+            <div class="barra-login">
+                <a class="logo-login" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Netflics</h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="film.html" class="navegacion__enlace">Films</a>
+                    <a href="pelicula.html" class="navegacion__enlace">Peliculas</a>
+                    <a href="serie.html" class="navegacion__enlace">Series</a>
+                    <a href="kids.html" class="navegacion__enlace">Kids</a>
+                    <a id="eliminar" href="login.html" class="navegacion__enlace">Iniciar Sesión</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-login">
+        <div class="info">
+            <h1 class="info__titulo">Iniciar Sesión</h3>
+                <p class="info__descripcion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eaque quia exercitationem fuga harum
+                    pariatur ipsa adipisci consectetur saepe obcaecati doloribus quas ducimus nisi suscipit numquam
+                    fugit voluptas illum, consequuntur nemo eligendi! Ea, nihil temporibus eligendi omnis ipsa, labore
+                    totam repellat assumenda ipsam, iusto optio. Porro quis consequuntur amet accusantium!
+                </p>
+                <a class="mas-info" href="#">Lee mas sobre nosotros</a>
+        </div>
+
+        <form id="login" class="login-registrarse">
+            <h3 class="login__titulo">Iniciar Sesión</h3>
+
+            <div class="login-cuestionario">
+
+                <p class="login__palabras">Correo</p>
+                <input id="email" class="login__name" type="email" placeholder="Correo">
+
+                <p class="login__palabras">Contraseña</p>
+                <input id="password" class="login__password" type="password" placeholder="Contraseña">
+            </div>
+
+            <a class="link-login" href="registrarse.html">Crear cuenta nueva</a>
+            <a class="link-login" href="#">Terminos de Privacidad y Seguridad</a>
+            <input class="boton-crear-cuenta" type="submit" value="Iniciar Sesión">
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

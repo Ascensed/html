@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login">
+
+    <header class="header-login">
+        <div class="contenedor">
+            <div class="barra-login">
+                <a class="logo-login" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Netflics</h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="film.html" class="navegacion__enlace">Films</a>
+                    <a href="pelicula.html" class="navegacion__enlace">Peliculas</a>
+                    <a href="serie.html" class="navegacion__enlace">Series</a>
+                    <a href="kids.html" class="navegacion__enlace">Kids</a>
+                    <a id="eliminar" href="login.html" class="navegacion__enlace">Iniciar Sesión</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor-registro">
+        <form action="#" method="post" class="registrarse-r">
+            <h3 class="registro__titulo">Agregar Pelicula</h3>
+
+            <div class="cuestionario-r">
+
+                <p class="registro__palabras">*Nombre</p>
+                <input type="text" name="name" placeholder="Nombre" class="registro__name">
+
+                <p class="registro__palabras">*Descripcion</p>
+                <input type="text" name="description" placeholder="Descripcion" class="registro__name">
+
+                <p class="registro__palabras">*Sinopsis</p>
+                <input type="text" name="sinopsis" placeholder="Sinopsis" class="registro__name">
+
+                <p class="registro__palabras">*Valuacion</p>
+                <input type="number" step="0.01" name="valuation" placeholder="Valuacion" class="registro__name">
+
+                <p class="registro__palabras">*Genero</p>
+                <input type="text" name="gender" placeholder="Genero" class="registro__name">
+
+                <p class="registro__palabras">Cantidad Disponible</p>
+                <input type="number" name="stock" placeholder="Cantidad Disponible" class="registro__name">
+
+                <p class="registro__palabras">Asientos</p>
+                <input type="text" name="seats" placeholder="Asientos" class="registro__name">
+
+                <p class="registro__palabras">Personas</p>
+                <input type="text" name="people" placeholder="Personas" class="registro__name">
+
+                <p class="registro__palabras">Imagen</p>
+                <input type="text" name="image" placeholder="Imagen" class="registro__name">
+            </div>
+
+            <input class="boton-registro" type="submit" value="Agregar">
+        </form>
+    </div>
+
+</body>
+
+</html>
