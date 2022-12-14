@@ -417,7 +417,7 @@ img {
 
 .cuenta-titulo {
   margin: 10rem auto 0;
-  color: red;
+  color: white;
 }
 
 .cuenta__img {
@@ -441,12 +441,12 @@ img {
   margin: 0 1rem;
   font-size: 20px;
   font-weight: bold;
-  color: red;
+  color: white;
 }
 
 .dato__cuenta {
   margin: 0 1rem;
-  color: red;
+  color: white;
 }
 
 .contenedor-evento {
@@ -480,12 +480,12 @@ img {
 
 .boleto__titulo {
   margin-top: 4rem;
-  color: red;
+  color: white;
 }
 
 .boleto__text {
   display: inline;
-  color: red;
+  color: white;
 }
 
 .boleto__horario {
@@ -546,8 +546,10 @@ img {
   margin-left: 3rem;
   font-weight: bold;
   font-size: 2rem;
+  display: block;
 }
-.favorito{
+.favorito,
+.valorar{
   background-color: black;
   border-radius: 5px;
   padding: 2rem;
@@ -558,7 +560,37 @@ img {
   font-size: 2rem;
   cursor: pointer;
   text-align: center;
+  margin-bottom: 2rem;
 }
+
+/* input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+} */
+
 .cuenta__titulo{
-  color: red;
+  color: white;
+}
+
+.prueba{
+  background-color: black;
+  width: 100%;
+  height: 5rem;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.nueva-pelicula{
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.masActores{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 7rem;
 }

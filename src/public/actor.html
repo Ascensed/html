@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Cuenta</title>
+    <title>Pelicula</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
-<body>
+<body class="login">
 
     <header class="header-login">
         <div class="contenedor">
@@ -29,38 +30,33 @@
         </div>
     </header>
 
-
-    <div class="contenedor-cuenta">
-
-        <div class="contenedor-datos">
-            <h1 class="cuenta-titulo">Mi cuenta</h1>
-            <img class="cuenta__img" src="img/luffy.jpeg">
-
-            <form id="cerrar">
-                <p class="text__cuenta">Nombre:</p>
-                <p id="name" class="dato__cuenta">Hola</p>
-
-                <p class="text__cuenta">Email:</p>
-                <p id="email" class="dato__cuenta">hola@gmail.com</p>
-                <a class="link__cuenta" href="#">Cambiar Contraseña</a>
-                <input class="boton-logout" type="submit" value="Cerrar Sesión">
-            </form>
+    <div class="contenedor-login">
+        <div id="info" class="info">
+            <h2 id="info__titulo" class="info__titulo">Titulo</h2>
+            <img id="info__imagen" class="info__imagen">
+            <h4 id="info__descripcion" class="info__descripcion">
+                Mas actores de la misma pelicula
+            </h4>
+            <div id="masActores" class="masActores">
+                    
+            </div>
         </div>
 
-        <div class="contenedor-evento">
-            <h3 class="cuenta__titulo">Peliculas Favoritas</h3>
-            <div id="contenedor-boletos" class="contenedor-boletos">
-
+        <div class="atajos">
+            <div id="sexo" class="reparto">
+                <h4>Sexo: </h4>
             </div>
-            <h3 class="cuenta__titulo">Historial de visitas</h3>
-            <div id="historial" class="contenedor-boletos">
-
+            <div id="edad" class="reparto">
+                <h4>Edad: </h4>
+            </div>
+            <div id="peliculas" class="reparto">
+                <h4>Peliculas: </h4>
             </div>
         </div>
 
     </div>
 
-    <script src="js/cuenta.js"></script>
+    <script src="js/actor.js"></script>
 
 </body>
 

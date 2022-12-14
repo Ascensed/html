@@ -68,7 +68,7 @@ const getDirector = async (req, res) => {
 // Trae un director por id de pelicula
 const getReparto = async (req, res) => {
     const id = req.params.id;
-    const response = await pool.query('SELECT a.nombre, a.apellido from elenco e join actor a on e.id_actor = a.id_actor and id_film = $1', [id]);
+    const response = await pool.query('SELECT * from elenco e join actor a on e.id_actor = a.id_actor and id_film = $1', [id]);
     res.json(response.rows);
 };
 
@@ -103,6 +103,41 @@ const getFavoritos = async (req, res) => {
     res.json(response.rows);
 };
 
+// Da valoracion a una pelicula
+const putValoracion = async (req, res) => {
+    const id = req.params.id;
+    const { valoracion } = req.body;
+    const response = await pool.query('UPDATE film SET valoracion = $1 WHERE film.id_film = $2', [valoracion, id]);
+    console.log(response);
+    res.json({
+        message: 'Valoracion actualizada con exito',
+    });
+};
+
+// Trae los favoritos de el usuario
+const getPeliculasActor = async (req, res) => {
+    const id = req.params.id;
+    const response = await pool.query('select * FROM film join elenco on film.id_film = elenco.id_film join actor on elenco.id_actor = actor.id_actor WHERE actor.id_actor = $1', [id]);
+    res.json(response.rows);
+};
+
+// Da valoracion a una pelicula
+const putHistorial = async (req, res) => {
+    const { id_usuario, id_pelicula } = req.body;
+    const response = await pool.query('INSERT INTO historial (id_usuario, id_film) VALUES ($1, $2)', [id_usuario, id_pelicula]);
+    console.log(response);
+    res.json({
+        message: 'Pelicula agregada al historial',
+    });
+};
+
+// Trae historial de usuario
+const getHistorial = async (req, res) => {
+    const id = req.params.id;
+    const response = await pool.query('SELECT * from film join historial on film.id_film = historial.id_film join usuario on historial.id_usuario = usuario.id_usuario where usuario.id_usuario = $1', [id]);
+    res.json(response.rows);
+};
+
 // const updateUsuario = async (req, res) => {
 //     const id = req.params.id;
 //     const { nombre, apellido, contrasena, edad } = req.body;
@@ -123,5 +158,9 @@ module.exports = {
     getGeneros,
     getGenero,
     putFavorito,
-    getFavoritos
+    getFavoritos,
+    putValoracion,
+    getPeliculasActor,
+    putHistorial,
+    getHistorial
 }

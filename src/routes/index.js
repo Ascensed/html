@@ -1,7 +1,9 @@
 const { Router } = require('express');
 const router = Router();
 
-const { getFilms, getUsuarios, getUsuarioPorId, deleteUsuario, putUsuario, getFilmPorId, getDirector, getReparto, getGeneros, getGenero, putFavorito, getFavoritos } = require('../controllers/index.controller');
+const { getFilms, getUsuarios, getUsuarioPorId, deleteUsuario, putUsuario, getFilmPorId, getDirector, 
+        getReparto, getGeneros, getGenero, putFavorito, getFavoritos, putValoracion, getPeliculasActor,
+        putHistorial, getHistorial } = require('../controllers/index.controller');
 
 
 // traer todos los usuarios
@@ -43,5 +45,17 @@ router.post('/films/favorito/:id', putFavorito);
 
 // trae favoritos de un usurios
 router.get('/films/favorito/:id', getFavoritos);
+
+// dar valoracion a film
+router.post('/films/valoracion/:id', putValoracion);
+
+// da peliculas de autor segun su id
+router.get('/films/actores/peliculas/:id', getPeliculasActor);
+
+// inserta pelicula en historial
+router.post('/films/historial', putHistorial);
+
+// trae historial de usuario
+router.get('/films/historial/:id', getHistorial);
 
 module.exports = router;
